@@ -1,6 +1,9 @@
-@import-when-export url(http://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic);
-@import-when-export url(http://fonts.googleapis.com/css?family=Lato:900,300);
+@import-when-export url(http://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext);
+@import-when-export url(http://fonts.googleapis.com/css?family=Lato:900,300&subset=latin-ext);
 
+:root {
+	--control-text-color: #777;
+}
 
 /**
  * forked from pixyll.com
@@ -30,7 +33,7 @@
 	font-family: 'Merriweather';
 	font-style: italic;
 	font-weight: 900;
-	src: local('Merriweather Heavy Italic'), local('Merriweather-HeavyItalic'), url(./pixyll/Merriweather-HeavyItalic.ttf);
+	src: local('Merriweather Heavy Italic'), local('Merriweather-HeavyItalic'), url(./pixyll/Merriweather-BoldItalic.ttf);
 }
 
 @font-face {
@@ -428,12 +431,15 @@ a {
 	margin-top: 19px;
 }
 
-#outline-dropmenu {
-	background-color:white;
+#typora-sidebar {
 	font-size:1rem !important;
 }
 
-#outline-content li, #outline-content ul {
+.html-for-mac #typora-sidebar {
+	background-color:white;
+}
+
+.outline-content li, .outline-content ul {
 	font-size:1rem !important;
 }
 
@@ -482,6 +488,9 @@ a {
 	color: #777777;
 }
 
+.preference-item-hint {
+	margin-top: 16px;
+}
 
 .md-diagram-panel {
 	margin-top: 24px;
