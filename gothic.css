@@ -45,6 +45,7 @@ html,
 body,
 #write{
 	background: #fcfcfc;
+	background: var(--bg-color);
 	font-family: 'TeXGyreAdventor', "Century Gothic", 'Yu Gothic', 'Raleway', "STHeiti", sans-serif;
 	font-weight: 300;
 }
@@ -266,7 +267,10 @@ code, .md-fences {
 
 .task-list-item input {
 	top: 3px;
+}
 
+.md-task-list-item input {
+	margin-left: -1.5em;
 }
 
 .task-list-item input:before {
@@ -279,15 +283,21 @@ code, .md-fences {
 	border: 1px solid gray;
 	background-color: #fdfdfd;
 	margin-left: 0;
-	margin-top: -0.8rem;
+	-webkit-appearance: none;
+	margin-top: -1rem;
 }
+
+.typora-node .task-list-item input:before {
+	top: 0.3ex;
+	position: absolute;
+}
+
 .task-list-item input:checked:before,
 .task-list-item input[checked]:before{
 	content: '\25FC';
 	/*◘*/
 	font-size: 0.8125rem;
 	line-height: 0.9375rem;
-	margin-top: -1rem;
 }
 
 /* Chrome 29+ */

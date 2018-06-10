@@ -276,17 +276,9 @@ tt {
     padding-top: 8px;
     padding-bottom: 6px;
 }
-.task-list{
-	padding-left: 0;
-}
 
-.task-list-item {
-	padding-left:32px;
-}
-
-.task-list-item input {
-  top: 3px;
-  left: 8px;
+.md-task-list-item > input {
+  margin-left: -1.3em;
 }
 
 @media screen and (min-width: 914px) {
@@ -343,10 +335,10 @@ tt {
 	top: .285714286rem;
 }
 .md-image>.md-meta {
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
     border-radius: 3px;
     font-family: Consolas, "Liberation Mono", Courier, monospace;
-    padding: 2px 4px 0px 4px;
+    padding: 2px 0px 0px 4px;
     font-size: 0.9em;
     color: inherit;
 }
@@ -401,4 +393,8 @@ header, .context-menu, .megamenu-content, footer{
 
 .md-lang {
     color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
 }
